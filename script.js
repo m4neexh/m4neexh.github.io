@@ -1,12 +1,12 @@
-const GITHUB_USER = "hafilrazz";
+const GITHUB_USER = "m4neexh";
 
 const fallbackProjects = [
-  {name:"NeuroLens", description:"Explainable AI system for Alzheimer’s MRI analysis with deep learning, Grad-CAM visualization and clinical insights.", language:"Python", topics:["AI/ML","Computer Vision","Streamlit"], html_url:"https://github.com/hafilrazz"},
-  {name:"Pet AI", description:"Intelligent pet-care application combining a modern web interface with AI-assisted veterinary guidance and risk assessment.", language:"JavaScript", topics:["React","Node.js","AI"], html_url:"https://github.com/hafilrazz"},
-  {name:"Water Conservation Management System", description:"Full-stack platform for water consumption, billing, alerts, conservation methods and administrative analytics.", language:"JavaScript", topics:["React","Express","Oracle"], html_url:"https://github.com/hafilrazz"},
-  {name:"Cloud Java Monitoring Tool", description:"Cloud-focused monitoring concept for server CPU, RAM, threads and runtime health on AWS infrastructure.", language:"Java", topics:["AWS","Monitoring","Cloud"], html_url:"https://github.com/hafilrazz"},
-  {name:"ATS Resume Checker", description:"Resume analysis interface for ATS scoring, grammar checks, missing skills and actionable improvement suggestions.", language:"Python", topics:["Streamlit","NLP","AI"], html_url:"https://github.com/hafilrazz"},
-  {name:"ECG Arrhythmia Classifier", description:"Deep-learning workflow for ECG arrhythmia classification with preprocessing, label encoding and saved inference models.", language:"Python", topics:["TensorFlow","Healthcare","ML"], html_url:"https://github.com/hafilrazz"}
+  {name:"NeuroLens", description:"Explainable AI system for Alzheimer’s MRI analysis with deep learning, Grad-CAM visualization and clinical insights.", language:"Python", topics:["AI/ML","Computer Vision","Streamlit"], html_url:"https://github.com/m4neexh"},
+  {name:"Pet AI", description:"Intelligent pet-care application combining a modern web interface with AI-assisted veterinary guidance and risk assessment.", language:"JavaScript", topics:["React","Node.js","AI"], html_url:"https://github.com/m4neexh"},
+  {name:"Water Conservation Management System", description:"Full-stack platform for water consumption, billing, alerts, conservation methods and administrative analytics.", language:"JavaScript", topics:["React","Express","Oracle"], html_url:"https://github.com/m4neexh"},
+  {name:"Cloud Java Monitoring Tool", description:"Cloud-focused monitoring concept for server CPU, RAM, threads and runtime health on AWS infrastructure.", language:"Java", topics:["AWS","Monitoring","Cloud"], html_url:"https://github.com/m4neexh"},
+  {name:"ATS Resume Checker", description:"Resume analysis interface for ATS scoring, grammar checks, missing skills and actionable improvement suggestions.", language:"Python", topics:["Streamlit","NLP","AI"], html_url:"https://github.com/m4neexh"},
+  {name:"ECG Arrhythmia Classifier", description:"Deep-learning workflow for ECG arrhythmia classification with preprocessing, label encoding and saved inference models.", language:"Python", topics:["TensorFlow","Healthcare","ML"], html_url:"https://github.com/m4neexh"}
 ];
 
 const projectsGrid = document.getElementById("projectsGrid");
@@ -341,7 +341,7 @@ loadComments();
 const githubPortrait = document.querySelector(".github-portrait img");
 if (githubPortrait) {
   githubPortrait.addEventListener("error", () => {
-    githubPortrait.src = "https://avatars.githubusercontent.com/hafilrazz";
+    githubPortrait.src = "https://avatars.githubusercontent.com/m4neexh";
   });
 }
 
