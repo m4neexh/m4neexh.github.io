@@ -265,7 +265,6 @@ document.getElementById("contactForm").addEventListener("submit",e=>{
 
 const commentsList=document.getElementById("commentsList");
 const defaultComments=[
-  {id:"pinned-1",name:"Maneesh",text:"Thanks for stopping by! Feel free to leave a comment or reach out through the contact section. 🚀",pinned:true,likes:7},
   {id:"seed-1",name:"Visitor",text:"Welcome to Maneesh's portfolio. Explore the projects and drop a message!",likes:3}
 ];
 
