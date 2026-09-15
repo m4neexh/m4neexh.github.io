@@ -24,7 +24,7 @@ function projectCard(repo, index){
     <article class="project-card reveal">
       <div class="project-image"><span>${escapeHTML(repo.language || "SOFTWARE / PROJECT")}</span></div>
       <h3>${escapeHTML(repo.name.replaceAll("-"," "))}</h3>
-      <p>${escapeHTML(repo.description || "A software project by Hafil Razak.")}</p>
+      <p>${escapeHTML(repo.description || "A software project by Maneesh.")}</p>
       <div class="chips">${topics.map(t=>`<span>${escapeHTML(t)}</span>`).join("")}</div>
       <div class="project-bottom">
         <a class="live-link" href="${repo.homepage || repo.html_url}" target="_blank" rel="noopener">GitHub ↗</a>
@@ -265,8 +265,8 @@ document.getElementById("contactForm").addEventListener("submit",e=>{
 
 const commentsList=document.getElementById("commentsList");
 const defaultComments=[
-  {id:"pinned-1",name:"Hafil Razak",text:"Thanks for stopping by! Feel free to leave a comment or reach out through the contact section. 🚀",pinned:true,likes:7},
-  {id:"seed-1",name:"Visitor",text:"Welcome to Hafil's portfolio. Explore the projects and drop a message!",likes:3}
+  {id:"pinned-1",name:"Maneesh",text:"Thanks for stopping by! Feel free to leave a comment or reach out through the contact section. 🚀",pinned:true,likes:7},
+  {id:"seed-1",name:"Visitor",text:"Welcome to Maneesh's portfolio. Explore the projects and drop a message!",likes:3}
 ];
 
 function timeAgo(ts){
@@ -281,10 +281,10 @@ function timeAgo(ts){
 }
 
 function getLikedSet(){
-  return new Set(JSON.parse(localStorage.getItem("hafil-liked")||"[]"));
+  return new Set(JSON.parse(localStorage.getItem("Maneesh-liked")||"[]"));
 }
 function toggleLike(id,likeCountEl,btn){
-  const stored=JSON.parse(localStorage.getItem("hafil-comments")||"[]");
+  const stored=JSON.parse(localStorage.getItem("Maneesh-comments")||"[]");
   const liked=getLikedSet();
   const isDefault=defaultComments.some(c=>c.id===id);
   let entry=isDefault?defaultComments.find(c=>c.id===id):stored.find(c=>c.id===id);
@@ -332,7 +332,7 @@ document.getElementById("commentForm").addEventListener("submit",e=>{
   const stored=JSON.parse(localStorage.getItem("hafil-comments")||"[]");
   const comment={id:`c-${Date.now()}`,name,text,likes:0,createdAt:Date.now()};
   stored.push(comment);
-  localStorage.setItem("hafil-comments",JSON.stringify(stored));
+  localStorage.setItem("Maneesh-comments",JSON.stringify(stored));
   renderComment(comment);
   e.target.reset();
 });
